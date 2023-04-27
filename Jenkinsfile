@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+    label 'jenkins-agent-gcloud-npe'
+    }
     tools {
         maven "MAVEN"
     }
